@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligtas Agad Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="12345"></script>
+
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <img 
+                src="https://raw.githubusercontent.com/Gabzrock/LIGTASAGADEWSV8.1-fallbackedition/refs/heads/main/welcometoligtas.png" 
+                alt="Welcome to Ligtas Agad" 
+                class="modal-img" 
+                onclick="closeModal()"
+            >
+            
+            <div class="modal-btn-container">
+                <a href="https://www.facebook.com/projectligtasuplb" target="_blank" class="modal-action-btn btn-fb">
+                    <i class="fab fa-facebook-square"></i> Visit Facebook Page
+                </a>
+                
+                <a href="https://ligtas.uplb.edu.ph/" target="_blank" class="modal-action-btn btn-about">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                
+                <a href="https://script.google.com/a/macros/up.edu.ph/s/AKfycbxjftBU3QWv36q4xk3oHr0vmG5zMVJJV7LUsImOrUWekPM2DPIbiKw5tKy5YAm7coijYw/exec" target="_blank" class="modal-action-btn btn-report">
+                    <i class="fas fa-exclamation-triangle"></i> Report a Landslide
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="left-section">
+            <img src="https://raw.githubusercontent.com/Gabzrock/LIGTASAGADEWSV8.1-fallbackedition/refs/heads/main/MAINArtboard%201LIGTAS%20LOGO.png" alt="Ligtas Agad Logo" class="main-logo">
+            <div class="divider"></div>
+            <div class="tagline">
+                <span class="highlight">L</span>andslide 
+                <span class="highlight">I</span>nvestigations for 
+                <span class="highlight">G</span>eohazards Preparedness and 
+                <span class="highlight">T</span>imely 
+                <span class="highlight">A</span>dvisories in the Philippine<span class="highlight">s</span>: <br>
+                <span class="highlight">A</span>dvanced 
+                <span class="highlight">G</span>eospatial 
+                <span class="highlight">A</span>pproaches for 
+                <span class="highlight">D</span>RRM
+            </div>
+        </div>
+        <div class="right-section">
+            <nav>
+                <a href="#">About us</a>
+                <a href="https://script.google.com/a/macros/up.edu.ph/s/AKfycbxjftBU3QWv36q4xk3oHr0vmG5zMVJJV7LUsImOrUWekPM2DPIbiKw5tKy5YAm7coijYw/exec">Report a landslide</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Services &#9662;</button>
+                    <div class="dropdown-content">
+                        <a href="https://gabzrock.github.io/Gabzrock-LIGTASAGADEWSV10/">Landslide Early Warning</a>
+                        <a href="https://gabzrock.github.io/LIGTAS-AGADLSDBV6/">Landslide Database</a>
+                        <a href="https://gabzrock.github.io/LIGTAS-AGADLandslide-Warning-Advisories/">Landslide Warning Advisories</a>
+                    </div>
+                </div>
+            </nav>
+            <img src="https://raw.githubusercontent.com/Gabzrock/LIGTASAGADEWSV8.1-fallbackedition/refs/heads/main/ligtas-agad%20partners%20logo%20(1).png" alt="Partner Logos" class="partner-logos">
+        </div>
+    </header>
+
+    <div class="main-container">
+        
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-question">
+                    May nangyari bang landslide o pagguho ng lupa sa inyong lugar? I-report na sa <span class="project-name">Project LIGTAS</span>
+                </div>
+                <h1 class="hero-title">
+                    MAGMASID<br>
+                    MAG-ULAT<br>
+                    MAGING <span class="yellow-underline">LIGTAS</span>, PINAS!
+                </h1>
+                <a href="https://script.google.com/a/macros/up.edu.ph/s/AKfycbxjftBU3QWv36q4xk3oHr0vmG5zMVJJV7LUsImOrUWekPM2DPIbiKw5tKy5YAm7coijYw/exec" class="hero-btn">REPORT A LANDSLIDE</a>
+            </div>
+        </div>
+
+        <div class="collapsible-card">
+            <button class="collapsible-btn active">Rainfall-Induced Landslide Early Warning System (RILEWS)</button>
+            <div class="collapsible-content" style="display: block;">
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://gabzrock.github.io/Gabzrock-LIGTASAGADEWSV10/" 
+                        title="Ligtas Agad Map"
+                        allow="geolocation; camera; microphone; fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-card">
+            <button class="collapsible-btn">6-Day Weather & Landslide Hazard Forecast</button>
+            <div class="collapsible-content">
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://gabzrock.github.io/LIGTAS-AGAD-5dforecastapp/?fbclid=IwY2xjawPvhYRleHRuA2FlbQIxMABicmlkETFMY0RCOW5RaU5OTkNxZkNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHtr5tdO1Wx7DKSSzinilyzcNwRuJkdDy8HvC63Z--ErbnRqhPJlRNQ7AhW7d_aem_0XNAcJobHl4Vh-fbUAMUbA" 
+                        title="Ligtas Agad 6-Day Forecast"
+                        allow="geolocation; camera; microphone; fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-card">
+            <button class="collapsible-btn">Rainfall Forecast Summary</button>
+            <div class="collapsible-content">
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://script.google.com/a/macros/up.edu.ph/s/AKfycbzqctHCKzAxABeUkE5QejPNxm2GNjXfHRyc-ts_QQHs8Ol8hBnq_UQ9GuI1yPXJlgMbUQ/exec?fbclid=IwY2xjawP2SGRleHRuA2FlbQIxMABicmlkETF3aG9TOThYcEcxS01qNXVEc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjVRMJOGdiQxoOEVoPlPbCvBZxwesEhx85GWfilsKOfJ1Bt_yi1gBsicuQkK_aem_vYtTJhqa9lI4RLyLtTVE-Q" 
+                        title="Ligtas Agad Reporting Tool"
+                        allow="geolocation; camera; microphone; fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-card">
+            <button class="collapsible-btn">Landslide Warning Advisories</button>
+            <div class="collapsible-content">
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://gabzrock.github.io/LIGTAS-AGADLandslide-Warning-Advisories/" 
+                        title="Landslide Warning Advisories"
+                        allow="geolocation; camera; microphone; fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+     <div class="collapsible-card">
+            <button class="collapsible-btn">Online / News Updates </button>
+            <div class="collapsible-content">
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://gabzrock.github.io/Landslide-Tracker/" 
+                        title="Online / News Updates "
+                        allow="geolocation; camera; microphone; fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="collapsible-card">
+            <button class="collapsible-btn">LIGTAS Social Media Updates</button>
+            <div class="collapsible-content">
+                <div class="social-container">
+                    <div class="fb-page" 
+                         data-href="https://www.facebook.com/projectligtasuplb" 
+                         data-tabs="timeline" 
+                         data-width="800" 
+                         data-height="600" 
+                         data-small-header="false" 
+                         data-adapt-container-width="true" 
+                         data-hide-cover="false" 
+                         data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/projectligtasuplb" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/projectligtasuplb">Project Ligtas UPLB</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col" style="flex: 1.5;">
+                <h3 class="cyan-header">About Project Ligtas</h3>
+                <p class="footer-description">
+                    The main objective of the research project is to generate site-specific rainfall-landslide thresholds for the volcanic Southern Tagalog region and the mineralized terranes of the Benguet province that will be the basis for the formulation of site-specific and semi-quantitative early warning systems.
+                </p>
+                <img src="https://raw.githubusercontent.com/Gabzrock/LIGTASAGADEWSV8.1-fallbackedition/refs/heads/main/ligtas-agad%20partners%20logo%20(1).png" alt="Partner Logos" class="footer-logo-img">
+            </div>
+
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+639081877096</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>ligtas.uplb@up.edu.ph</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>School of Environmental Science and Management, University of the Philippines Los Baños, College, Laguna Philippines 4031</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Links</h3>
+                <div class="links-grid">
+                    <div class="link-column">
+                        <a href="#">About Us</a>
+                        <a href="#">Report a Landslide</a>
+                        <a href="https://gabzrock.github.io/LIGTAS-AGADLSDBV6/">Landslide Database</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#">Automatic Weather Stations</a>
+                        <a href="#">Weather Forecast</a>
+                        <a href="https://gabzrock.github.io/Gabzrock-LIGTASAGADEWSV10/">Landslide Early Warning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Copyright © 2026 All Rights Reserved by LIGTAS-AGAD.
+        </div>
+    </footer>
+    <script  src="./script.js"></script>
+</body>
+</html>
